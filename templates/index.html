@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>📚 Book Store</h2>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Our Library</h1>
+            <p>Discover, Borrow, and Explore Thousands of Books</p>
+        </div>
+    </section>
+
+    <!-- Book Management Section -->
+    <div class="container">
+        <h2>Available Books</h2>
+        <ul id="book-list"></ul>
+
+        <div class="input-section">
+            <h3>Borrow a Book</h3>
+            <input type="text" id="borrow-book" placeholder="Enter book title">
+            <button onclick="borrowBook()">Borrow</button>
+        </div>
+
+        <div class="input-section">
+            <h3>Return a Book</h3>
+            <input type="text" id="return-book" placeholder="Enter book title">
+            <button onclick="returnBook()">Return</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
