@@ -7,7 +7,8 @@ books = [
     {"title": "Harry Potter", "available": True},
     {"title": "The Hobbit", "available": True},
     {"title": "1984", "available": True},
-    {"title":"python","available":True}
+    {"title":"python","available":True},
+    {"title":"Java","available":True}
 ]
 
 @app.route('/')
